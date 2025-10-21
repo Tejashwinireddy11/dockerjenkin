@@ -1,13 +1,6 @@
 pipeline{
 	agent any
 	stages{
-	stage('checkout'){
-	steps{
-	echo "Cloning repo"
-	git url:"https://github.com/Tejashwinireddy11/dockerjenkin.git",
-	branch:'master'
-	}
-	}
 	stage('Build'){
 	steps{
 	echo "Build Docker Image"
